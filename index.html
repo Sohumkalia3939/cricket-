@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+
+
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+</head>
+<body>
+<center>
+<iframe width="1019" height="573" src="https://www.youtube.com/embed/zmiVWO7ab88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="container">
+  <div class="vertical-center">
+<button class="button button1" onclick="myFunction()">Out</button>
+<button class="button button2" onclick="myFunctiona()">Not Out</button>
+<p id="demo" style="  font-size: 400px;
+">decision</p>
+<script>
+	function myFunction() {
+  document.getElementById("demo").innerHTML = "OUT";
+    window.scrollBy(0, 1000);
+}
+	function myFunctiona() {
+  document.getElementById("demo").innerHTML = "NOT OUT";
+    window.scrollBy(0, 1000);
+}
+
+</script>
+</div>
+</div>
+</center>
+</body>
+</html>
